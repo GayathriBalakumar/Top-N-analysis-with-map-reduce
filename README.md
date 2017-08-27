@@ -10,6 +10,12 @@ Data Set Descrption:
   3. Users.csv file with "user_id","name","url"
   
 Approach:  
+Top Locations:
  * mapper phase: emits <k,v> pairs as <zipcode, 1> for every entry from business file
  * reduce phase: count the no.of.businesses grouped by zip code and store the results in an associative array.
  * cleanup phase: sort the array and output top 10 results. 
+Top Businesses:
+ * mapper phase: emits <k,v> pairs as <business_id, stars> for every entry from ratings file
+ * reduce phase: compute the average of stars grouped by business_id and store the results in an associative array.
+ * cleanup phase: sort the array and output top 10 results. 
+ 
