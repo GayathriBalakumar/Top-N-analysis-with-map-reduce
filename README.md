@@ -11,6 +11,6 @@ Data Set Descrption:
   
 Approach:  
   Top Locations: 
-    mapper phase: emits <k,v> pairs as <zipcode, 1> for every entry from business file
-    reduce phase: count the no.of.businesses grouped by zip code and store the results in an associative array.
-    cleanup phase: sort the array and output top 10 results. 
+      mapper phase: emits <k,v> pairs as <zipcode, 1> for every entry from business file
+      reduce phase: count the no.of.businesses grouped by zip code and store the results in an associative array.
+      cleanup phase: sort the array and output top 10 results. 
